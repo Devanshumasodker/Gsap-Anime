@@ -87,7 +87,7 @@ gsap.from(".page .box",{
         scroller : ".main",
         start : "top top",
         end: "bottom bottom",
-        markers : true,
+        // markers : true,
         scrub : 3,
         pin : true,
     }
