@@ -67,13 +67,23 @@ gsap.from(".page1 main img",{
    
 })
 gsap.from(".page1 main h1,p",{
-    scale : 0,
+   // scale : 0,
     // x   : -100,
     opacity : 0,
     duration : 1.3,
     stagger : .3,
     scrub : 1.3,
    
+})
+
+gsap.from(".page1 main button",{
+  // scale : 0,
+   y   : -20,
+   opacity : 0,
+   duration : 1.3,
+   stagger : .3,
+   scrub : 1.3,
+  
 })
 
 gsap.from(".page .box",{
