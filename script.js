@@ -42,6 +42,9 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 ScrollTrigger.refresh();
 
+
+var tl = gsap.timeline();
+
 gsap.from("nav h1",{
     x : -100,
     opacity : 0,
@@ -86,17 +89,18 @@ gsap.from(".page1 main button",{
   
 })
 
-gsap.from(".page .box",{
+gsap.from(".box",{
     rotate : 360,
     scale:3,
     opacity : 0,
+    repeat : 0,
     
     backgroundColor : "red",
     scrollTrigger : {
-        trigger : ".box",
+        trigger : ".page",
         scroller : ".main",
         start : "top top",
-        end: "bottom bottom",
+        // end: "top 60%",
         // markers : true,
         scrub : 3,
         pin : true,
